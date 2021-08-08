@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body{
+    font-family: 'Kalam Light', sans-serif;
+    background-color: #111;  
+}
+
+.topnav{
+  background-color: #000;
+  overflow: hidden;
+}
+
+.topnav a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active{
+  background-color: #5d432c;
+  color: white;
+}
+
+.topnav .icon{
+  display: none;
+}
+
+@media screen and (max-width: 600px){
+  .topnav a:not(:first-child) {display: flex;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+    
+  .topnav.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.card-img{
+    width:100%;
+    height:500px;   
+}
+
+.h1{
+    color: #9F8170;
+    size: 20px;
+}
+
+.pp{
+    color: darkgray;
+    font-size: 17px;
+}
+
+.wrapper{
+  width: 1200px;
+  margin: 100px auto;
+}
+
+.single-menu{
+  flex-basis:580px;
+  margin-bottom:40px;
+  padding-bottom:40px;
+  border-bottom:1px solid #ddd;
+}
+
+.single-menu:nth-child(5), .single-menu:nth-child(6){
+  border-bottom:0;
+}
+
+.single-menu{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.single-menu:hover img{
+  border-radius:0;
+}
+
+.single-menu img{
+  max-width:180px;
+  margin-right:30px;
+  border-radius:50%;
+  border:1px solid #ddd;
+  padding:3px;
+  transition:.5s;
+}
+
+.single-menu h4{
+  text-transform:capitalize;
+  font-size:22px;
+  border-bottom:1px dashed #333;
+  margin-bottom:5px;
+  padding-bottom:5px;
+}
+
+.single-menu h4 span{
+  float:right;
+  color: whitesmoke;
+  font-style:italic;
+    font-size:25px;
+}
+
+.pfooter{
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.pfooter2{
+    font-size: 14px;
+}
